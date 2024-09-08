@@ -49,3 +49,12 @@ window.onload = function () {
     },2000)
     
 };
+
+setTimeout(function() {
+    const img1 = document.getElementById("img1");
+    const img2 = document.getElementById("logoimg");
+    
+    img1.style.visibility = "hidden"; 
+    img2.style.visibility = "visible"; 
+},3200);
+

@@ -31,7 +31,10 @@ html {
   justify-content: center;
   gap: 5px;
 }
-
+#logoimg {
+  width: 110px;
+  height: 120px;
+}
 .Logo p {
   font-size: medium;
   margin-top: 20px;
@@ -270,9 +273,6 @@ footer p a {
   object-fit: cover;
 }
 
-#img2{
-  border-radius: 50%;
-}
 .center-logo {
   position: absolute;
   /* transform: translate(-50%, -50%); */
@@ -363,6 +363,53 @@ footer p a {
     transform: translate(-50%, -50%) translate(-1040px, -289px) rotate(360deg);
   }
 }
+
+
+/* reverse  */
+@keyframes reverseSpin {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes reverseLogoAnimation {
+  0% {
+    width: 50px;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes reversePopAndRotate {
+  0% {
+    width: 80px;
+    transform: translate(-50%, -50%) translate(-1040px, -289px) rotate(360deg);
+  }
+
+  50% {
+    width: 80px;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    width: 0;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+
+.reverse-pop {
+  animation: reversePopAndRotate 2s linear, reverseLogoAnimation 2s linear;
+}
+
+
+
 
 @media (max-width: 768px) {
   .container {
