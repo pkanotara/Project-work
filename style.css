@@ -71,13 +71,13 @@ html {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.enroll-btn:hover {
+/* .enroll-btn:hover {
   background-color: #006400;
   color: white;
-}
+} */
 
 .tooltip {
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 60px;
   right: -30px;
